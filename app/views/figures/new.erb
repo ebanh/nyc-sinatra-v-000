@@ -7,7 +7,7 @@
   <br></br>
   <h4>Select title/s:</h4>
   <%Title.all.each do |title|%>
-    <input type="checkbox" name="figure[title_ids][]" value="<%=title.name%>" id="title_<%=title.id%>"><%=title.name%></input>
+    <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="title_<%=title.id%>"><%=title.name%></input>
   <%end%>
 
   <p>and/or <b>create</b> a new title:</p>
@@ -17,7 +17,7 @@
   <br></br>
   <h4>Select landmark/s:</h4>
   <%Landmark.all.each do |landmark|%>
-    <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.name%>" id="landmark_<%=landmark.id%>"><%=landmark.name%></input>
+    <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>" id="landmark_<%=landmark.id%>"><%=landmark.name%></input>
   <%end%>
 
   <p>and/or <b>create</b> a new landmark:</p>
